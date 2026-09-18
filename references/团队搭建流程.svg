@@ -1,132 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 820" width="100%" role="img">
-  <title>多智能体团队搭建 · 全景流程</title>
-  <desc>从触发到交付的完整流程：判定需求形态（四类分支）→ 组队（先查池、后新建、校验每领域至少 2 人）→ 两类讨论（小组选方案、团队定实施）→ 落地运行（dry-run / mock / 真实运行）→ 交付与安全提示。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 528" width="100%" role="img">
+  <title>多智能体团队搭建 · 流程</title>
+  <desc>触发 → 判定需求形态 → 组队（先查池、后新建）→ 小组讨论选方案 → 团队讨论定实施 → 落地执行与交付。</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
     <style>
-      .t{font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;font-weight:500}
-      .s{font-family:'Segoe UI',system-ui,sans-serif;font-size:12px;font-weight:400}
       .th{font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;font-weight:500}
       .ts{font-family:'Segoe UI',system-ui,sans-serif;font-size:12px;font-weight:400}
     </style>
   </defs>
 
-  <text class="th" x="40" y="26" fill="#2C2C2A">多智能体团队搭建 · 全景流程</text>
+  <text class="th" x="40" y="26" fill="#2C2C2A">多智能体团队搭建 · 流程</text>
 
-  <rect x="250" y="40" width="180" height="34" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="340" y="57" text-anchor="middle" dominant-baseline="central" fill="#042C53">触发「多Agent团队」</text>
+  <rect x="240" y="44" width="200" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+  <text class="th" x="340" y="66" text-anchor="middle" dominant-baseline="central" fill="#042C53">触发「多Agent团队」</text>
 
-  <polyline points="340,74 340,88" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polyline points="340,88 340,114" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <rect x="230" y="90" width="220" height="34" rx="8" fill="#EEEDFE" stroke="#7F77DD" stroke-width="0.5"/>
-  <text class="th" x="340" y="107" text-anchor="middle" dominant-baseline="central" fill="#26215C">判定需求形态（内部）</text>
+  <rect x="200" y="116" width="280" height="56" rx="8" fill="#EEEDFE" stroke="#7F77DD" stroke-width="0.5"/>
+  <text class="th" x="340" y="135" text-anchor="middle" dominant-baseline="central" fill="#26215C">判定需求形态（内部）</text>
+  <text class="ts" x="340" y="154" text-anchor="middle" dominant-baseline="central" fill="#534AB7">A 人设 / B SDK / C 应用 / D 企业级</text>
 
-  <polyline points="340,124 340,140" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="110,140 570,140" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="110,140 110,150" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <polyline points="264,140 264,150" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <polyline points="418,140 418,150" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <polyline points="572,140 572,150" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polyline points="340,172 340,198" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <rect x="40" y="152" width="140" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="110" y="170" text-anchor="middle" dominant-baseline="central" fill="#042C53">形态 A</text>
-  <text class="ts" x="110" y="187" text-anchor="middle" dominant-baseline="central" fill="#185FA5">现成专家人设</text>
+  <rect x="200" y="200" width="280" height="56" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+  <text class="th" x="340" y="219" text-anchor="middle" dominant-baseline="central" fill="#042C53">组队：先查池、后新建</text>
+  <text class="ts" x="340" y="238" text-anchor="middle" dominant-baseline="central" fill="#185FA5">每领域 ≥2 人 · 复用优先</text>
 
-  <rect x="194" y="152" width="140" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="264" y="170" text-anchor="middle" dominant-baseline="central" fill="#042C53">形态 B</text>
-  <text class="ts" x="264" y="187" text-anchor="middle" dominant-baseline="central" fill="#185FA5">代码搭 SDK</text>
+  <polyline points="340,256 340,282" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <rect x="348" y="152" width="140" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="418" y="170" text-anchor="middle" dominant-baseline="central" fill="#042C53">形态 C</text>
-  <text class="ts" x="418" y="187" text-anchor="middle" dominant-baseline="central" fill="#185FA5">开箱应用</text>
+  <rect x="200" y="284" width="280" height="56" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+  <text class="th" x="340" y="303" text-anchor="middle" dominant-baseline="central" fill="#173404">① 小组讨论</text>
+  <text class="ts" x="340" y="322" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">选哪个方案 + 理由</text>
 
-  <rect x="502" y="152" width="140" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="572" y="170" text-anchor="middle" dominant-baseline="central" fill="#042C53">形态 D</text>
-  <text class="ts" x="572" y="187" text-anchor="middle" dominant-baseline="central" fill="#185FA5">企业级框架</text>
+  <polyline points="340,340 340,366" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <polyline points="110,196 110,208" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="264,196 264,208" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="418,196 418,208" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="572,196 572,208" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="110,208 572,208" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="340,208 340,238" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="200" y="368" width="280" height="56" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+  <text class="th" x="340" y="387" text-anchor="middle" dominant-baseline="central" fill="#173404">② 团队讨论</text>
+  <text class="ts" x="340" y="406" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">如何实施该方案</text>
 
-  <rect x="40" y="212" width="600" height="216" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
-  <text class="ts" x="56" y="232" fill="#5F5E5A">① 组队：先查池、后新建</text>
+  <polyline points="340,424 340,450" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <rect x="180" y="242" width="320" height="34" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="340" y="259" text-anchor="middle" dominant-baseline="central" fill="#042C53">查统一角色池（335 角色 / 23 领域）</text>
-
-  <polyline points="340,276 340,286" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="230" y="288" width="220" height="34" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-  <text class="th" x="340" y="305" text-anchor="middle" dominant-baseline="central" fill="#412402">池内有匹配角色？</text>
-
-  <polyline points="340,322 340,328" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="185,328 495,328" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="185,328 185,332" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <polyline points="495,328 495,332" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text class="ts" x="272" y="324" fill="#3B6D11">是</text>
-  <text class="ts" x="402" y="324" fill="#854F0B">否</text>
-
-  <rect x="60" y="334" width="250" height="40" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-  <text class="th" x="185" y="350" text-anchor="middle" dominant-baseline="central" fill="#173404">复用其人设</text>
-  <text class="ts" x="185" y="366" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">不重写 role / goal / backstory</text>
-
-  <rect x="370" y="334" width="250" height="40" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-  <text class="th" x="495" y="350" text-anchor="middle" dominant-baseline="central" fill="#412402">才新建角色</text>
-  <text class="ts" x="495" y="366" text-anchor="middle" dominant-baseline="central" fill="#854F0B">source 用 new: 前缀</text>
-
-  <polyline points="185,374 185,382" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="495,374 495,382" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="185,382 495,382" fill="none" stroke="#888780" stroke-width="1.5"/>
-  <polyline points="340,382 340,388" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="180" y="390" width="320" height="34" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="340" y="407" text-anchor="middle" dominant-baseline="central" fill="#042C53">写入 TEAM（domain + source）· 校验每领域 ≥2 人</text>
-
-  <polyline points="340,424 340,468" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="40" y="444" width="600" height="180" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
-  <text class="ts" x="56" y="464" fill="#5F5E5A">② 两类讨论：小组选方案、团队定实施</text>
-
-  <rect x="180" y="474" width="320" height="40" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-  <text class="th" x="340" y="491" text-anchor="middle" dominant-baseline="central" fill="#173404">小组讨论 · 聚焦方案本身</text>
-  <text class="ts" x="340" y="507" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">充分比较各 agent 的思路</text>
-
-  <polyline points="340,514 340,524" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="180" y="526" width="320" height="40" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-  <text class="th" x="340" y="543" text-anchor="middle" dominant-baseline="central" fill="#173404">每领域只出 1 条建议</text>
-  <text class="ts" x="340" y="559" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">选定哪个方案 + 关键理由</text>
-
-  <polyline points="340,566 340,576" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="180" y="578" width="320" height="40" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
-  <text class="th" x="340" y="595" text-anchor="middle" dominant-baseline="central" fill="#042C53">团队讨论 · 聚焦如何融入任务</text>
-  <text class="ts" x="340" y="611" text-anchor="middle" dominant-baseline="central" fill="#185FA5">衔接 · 职责 · 执行顺序 → 如何实施</text>
-
-  <polyline points="340,618 340,664" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="40" y="640" width="600" height="104" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
-  <text class="ts" x="56" y="660" fill="#5F5E5A">③ 落地运行：引擎可插拔</text>
-
-  <rect x="60" y="670" width="180" height="52" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-  <text class="th" x="150" y="690" text-anchor="middle" dominant-baseline="central" fill="#173404">--dry-run</text>
-  <text class="ts" x="150" y="706" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">零成本预览团队</text>
-
-  <rect x="250" y="670" width="180" height="52" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
-  <text class="th" x="340" y="690" text-anchor="middle" dominant-baseline="central" fill="#173404">--engine mock</text>
-  <text class="ts" x="340" y="706" text-anchor="middle" dominant-baseline="central" fill="#3B6D11">零依赖演示全流程</text>
-
-  <rect x="440" y="670" width="180" height="52" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-  <text class="th" x="530" y="690" text-anchor="middle" dominant-baseline="central" fill="#412402">真实运行</text>
-  <text class="ts" x="530" y="706" text-anchor="middle" dominant-baseline="central" fill="#854F0B">需 Key 或本地模型</text>
-
-  <polyline points="340,722 340,756" fill="none" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="200" y="760" width="280" height="40" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
-  <text class="th" x="340" y="780" text-anchor="middle" dominant-baseline="central" fill="#2C2C2A">交付说明 + 安全提示</text>
+  <rect x="200" y="452" width="280" height="56" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+  <text class="th" x="340" y="471" text-anchor="middle" dominant-baseline="central" fill="#2C2C2A">落地执行 / 给出具体示例</text>
+  <text class="ts" x="340" y="490" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">附交付说明 + 安全提示</text>
 </svg>
