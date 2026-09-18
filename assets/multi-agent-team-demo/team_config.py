@@ -4,7 +4,7 @@
 #
 # 【领域小组规则】同一 domain 的 Agent 组成一个"领域小组"，
 # 每个领域至少 2 人（DOMAIN_MIN_SIZE）——单人领域无法组内收敛，禁止。
-# 角色来源统一查「统一角色池」（references/统一角色池.md，318 个唯一角色 / 23 个领域）：
+# 角色来源统一查「统一角色池」（references/统一角色池.md，322 个唯一角色 / 23 个领域）：
 #   source = 池内 slug（如 engineering-code-reviewer）→ 直接复用其人设
 #   source = new:<自定slug>                          → 池内没有，才新建
 # 领域可选角色 < 2 时（如 research 仅 1 个），从相近领域跨领域补齐。
