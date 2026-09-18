@@ -125,5 +125,8 @@ agent_created: true
 - **Agent 全量清单**（讨论视图，不去重）：`references/agent-全量清单.md` —— 608 条（agent 583 + 工作流技能 25），重复 454 条 / 227 个路径，逐条标注所属库、路径、职责与重复来源。
 - **框架总览 / 选型**：`references/框架总览与选型.md`；**流程图**：`references/团队搭建流程.svg`。
 - **可运行脚手架**：`assets/multi-agent-team-demo/`。
-- **角色库 / 框架源码**：四个来源角色库与代码框架已下载至工作区 `ai-agent-frameworks/`。若缺失，触发后用克隆工具获取（本机到代码托管平台不稳时，先 `git config --global http.sslBackend openssl` + `core.longpaths true` 再克隆）。
+- **角色库（已发布，可直接克隆）**：四个来源角色库的角色内容已整理为独立仓库
+  **`https://github.com/zhangruilin158/agent-role-libraries`**（583 个角色，按领域组织，原始 MIT/Apache 许可与版权声明保留在 `LICENSES/`）。
+  本技能的角色池 / 全量清单即基于它；若本地缺失，克隆该仓库即可（本机到代码托管平台不稳时，先 `git config --global http.sslBackend openssl` + `core.longpaths true` 再克隆）。
+- **代码框架源码**：5 类代码框架已下载至工作区 `ai-agent-frameworks/`，仅作参考，未随技能分发。
 - 本技能已自带 `agent_created: true`，可直接打包（`SKILL.md` + `assets/` + `references/`）迁移到其他机器或分享。

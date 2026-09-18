@@ -47,7 +47,9 @@ multi-agent-team/
         └── README.md                # 脚手架使用说明
 ```
 
-> 角色库与框架**源码**体积大，不在这个包里，已单独下载到工作区 `ai-agent-frameworks/`；若缺失，触发后会引导用克隆工具获取。
+> **角色库已单独发布**：4 个角色库的角色内容（583 个角色）在配套仓库
+> **https://github.com/zhangruilin158/agent-role-libraries** —— 需要时克隆它即可，原始许可与版权声明保留在仓库的 `LICENSES/`。
+> 代码框架源码体积大，仅作参考、未随技能分发。
 
 ---
 
