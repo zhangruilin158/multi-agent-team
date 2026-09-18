@@ -2,6 +2,8 @@
 
 一句话：**你说一句"帮我组个多 Agent 团队"，它就从角色池挑专家、按领域组成小组，经"小组讨论 → 团队讨论"两级收敛，直接给你能跑的方案或具体示例。**
 
+> 🌐 英文版（English version）：https://github.com/zhangruilin158/multi-agent-team-en —— 同一套规则的全英文技能，已发布（SKILL/README 均为英文，角色池为英文子集 304 角色 / 19 领域）。
+
 ## 全景流程
 
 ```mermaid
