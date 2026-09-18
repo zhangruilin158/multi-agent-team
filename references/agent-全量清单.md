@@ -5,6 +5,12 @@
 >
 > 与 `统一角色池.md` 的关系：角色池是「去重后的**组队**视图」；本清单是「不去重的**讨论**视图」。
 > 组队用角色池（避免重复占位），讨论用本清单（保留不同视角）。
+>
+> **文件在哪**：四库内容已发布为独立仓库 **`https://github.com/zhangruilin158/agent-role-libraries`**。
+> 本清单的「所属库」对应仓库目录：通用角色库→`general-role-library/`、中文角色库→`chinese-role-library/`、
+> 工程专家人设库→`engineering-personas/`、评审专家人设库→`review-personas/`（4 个 agent）与 `workflow-skills/`（25 个工作流技能）。
+> 表内「文件路径」为**库内相对路径**，前面拼上对应目录即为仓库内路径（例：`general-role-library/engineering/engineering-code-reviewer.md`）。
+> 原始许可与版权声明在仓库 `LICENSES/`。
 
 ## 一、统计
 
@@ -20,7 +26,7 @@
 - 重复出现（同一相对路径出现在多个库）的条目：**454** 条，涉及 **227** 个路径
 - 识别口径：含 YAML frontmatter 且同时具备 `name:` 与 `description:` 即登记；遍历仓库**全部目录**（含子目录，不限于顶层角色目录）。
 - 重复判定：以**库内相对路径**为键（同一角色在两库路径一致），避免同名文件误判。
-- 说明：`评审专家人设库/skills/` 下的 25 条是**工作流技能**（非 agent），按用户要求一并登记，路径可辨；`agents/` 下 4 条才是该库的 agent。
+- 说明：`评审专家人设库/skills/` 下的 25 条是**工作流技能**（非 agent），已按用户要求一并登记，在仓库中对应 `workflow-skills/`；`agents/` 下 4 条才是该库的 agent，对应 `review-personas/`。
 
 ## 二、重复出现索引
 
