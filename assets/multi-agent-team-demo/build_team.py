@@ -20,8 +20,36 @@ try:
 except Exception:
     pass
 
+import team_config
 from team_config import TEAM, TASK_BRIEF, ENGINE
 from engines import get_engine, available_engines
+
+# 每个领域小组的最少专家数（团队协作规则：每领域必须 2 名及以上）
+DOMAIN_MIN_SIZE = getattr(team_config, "DOMAIN_MIN_SIZE", 2)
+
+
+def group_by_domain(team):
+    """按 domain 字段把团队分成领域小组。"""
+    groups = {}
+    for m in team:
+        groups.setdefault(m.get("domain", "unassigned"), []).append(m)
+    return groups
+
+
+def check_domain_groups(team):
+    """校验领域小组人数（每领域 >= DOMAIN_MIN_SIZE），返回 (分组, 展示行, 问题列表)。"""
+    groups = group_by_domain(team)
+    lines, problems = [], []
+    for domain, members in groups.items():
+        n = len(members)
+        flag = "OK " if n >= DOMAIN_MIN_SIZE else "!! "
+        lines.append("  %s%-14s %d 人：%s" % (flag, domain, n,
+                                            "、".join(m["role"] for m in members)))
+        if n < DOMAIN_MIN_SIZE:
+            problems.append(
+                "领域「%s」仅 %d 人（需 >= %d），单人无法组内收敛；"
+                "请从相近领域补齐或增加该领域专家。" % (domain, n, DOMAIN_MIN_SIZE))
+    return groups, lines, problems
 
 
 def main():
@@ -35,6 +63,15 @@ def main():
 
     engine_name = args.engine or ENGINE
     engine = get_engine(engine_name)
+
+    # 领域小组校验（团队协作规则：每个领域必须 2 名及以上专家）
+    _, group_lines, problems = check_domain_groups(TEAM)
+    print("领域小组（每领域需 >= %d 名专家）：" % DOMAIN_MIN_SIZE)
+    for line in group_lines:
+        print(line)
+    for p in problems:
+        print("  [!] " + p)
+    print()
 
     # 预览模式：只走引擎的 plan()，不调用大模型、不依赖任何框架
     if args.dry_run:
